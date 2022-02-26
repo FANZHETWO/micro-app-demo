@@ -5,7 +5,7 @@ import RootApp from './pages/root-app.vue'
 Vue.use(VueRouter);
 
 const routes = [
-  {path:'*',redirect: '/rootApp/home' },
+  {path:'*',redirect: window.__MICRO_APP_BASE_ROUTE__ },
   {
     path: window.__MICRO_APP_BASE_ROUTE__ || '/rootApp',
     name: 'rootApp',
@@ -18,7 +18,7 @@ const routes = [
         component: Home,
       },
       {
-        path: 'page2',
+        path: '/page2',
         name: 'page2',
         component: () => import(/* webpackChunkName: "page2" */ './pages/page2.vue'),
       },

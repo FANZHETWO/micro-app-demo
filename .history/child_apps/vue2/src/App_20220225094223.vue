@@ -1,6 +1,6 @@
 <template>
   <div id="vue2-app">
-  <!-- <button @click="back">back</button> -->
+  <button @click="back">back</button>
     <router-view />
   </div>
 </template>

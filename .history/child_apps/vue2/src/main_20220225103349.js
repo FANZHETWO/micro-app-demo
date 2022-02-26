@@ -15,7 +15,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   next();
 });
-window.addEventListener('popstate', () => {
+window.addEventListener('hashchange', () => {
   debugger
   const hash = window.location.hash.substr(1)
   console.log(hash)

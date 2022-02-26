@@ -5,7 +5,7 @@ import RootApp from './pages/root-app.vue'
 Vue.use(VueRouter);
 
 const routes = [
-  {path:'*',redirect: '/rootApp/home' },
+  {path:'*',redirect: window.__MICRO_APP_BASE_ROUTE__ },
   {
     path: window.__MICRO_APP_BASE_ROUTE__ || '/rootApp',
     name: 'rootApp',

@@ -12,15 +12,7 @@ const router = new VueRouter({
   base: window.__MICRO_APP_BASE_ROUTE__ || process.env.BASE_URL,
   routes,
 })
-router.beforeEach((to, from, next) => {
-  next();
-});
-window.addEventListener('popstate', () => {
-  debugger
-  const hash = window.location.hash.substr(1)
-  console.log(hash)
-  // 根据hash值渲染不同的dom
-})
+
 // 与基座进行数据交互
 function handleMicroData () {
   // 是否是微前端环境

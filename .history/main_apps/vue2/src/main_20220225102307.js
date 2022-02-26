@@ -5,12 +5,7 @@ import VueRouter from 'vue-router'
 import microApp from '@micro-zoe/micro-app'
 
 Vue.config.productionTip = false
-window.addEventListener('popstate', () => {
-  debugger
-  const hash = window.location.hash.substr(1)
-  console.log(hash)
-  // 根据hash值渲染不同的dom
-})
+
 microApp.start({
   plugins: {
     modules: {

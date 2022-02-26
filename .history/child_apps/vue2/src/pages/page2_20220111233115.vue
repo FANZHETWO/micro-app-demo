@@ -3,7 +3,6 @@
     <h1>child-vue2-page2</h1>
     <div class="child-vue2-test-btn">test</div>
     <img src="../assets/micro-app-logo.png" alt="micro-app-logo" />
-      <button @click="back">back</button>
   </div>
 </template>
 
@@ -14,13 +13,7 @@ export default {
   data() {
     return {
     }
-  }, 
-  methods: {
-   back() {
-     window.history.go(-1)
-      // this.$router.go(-1)
-    }  
-  },
+  }
 }
 </script>
 

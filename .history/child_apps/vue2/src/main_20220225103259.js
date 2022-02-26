@@ -13,10 +13,11 @@ const router = new VueRouter({
   routes,
 })
 router.beforeEach((to, from, next) => {
+  debugger
   next();
 });
-window.addEventListener('popstate', () => {
-  debugger
+window.addEventListener('hashchange', () => {
+
   const hash = window.location.hash.substr(1)
   console.log(hash)
   // 根据hash值渲染不同的dom

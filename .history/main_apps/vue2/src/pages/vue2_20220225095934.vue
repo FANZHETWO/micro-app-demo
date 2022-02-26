@@ -3,7 +3,6 @@
     <micro-app
       name='appname-vue2'
       :url='url'
-      baseroute='/rootApp'
       :data='microAppData'
       @created='handleCreate'
       @beforemount='handleBeforeMount'

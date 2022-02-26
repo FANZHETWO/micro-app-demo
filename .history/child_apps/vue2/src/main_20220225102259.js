@@ -13,14 +13,9 @@ const router = new VueRouter({
   routes,
 })
 router.beforeEach((to, from, next) => {
+  debugger
   next();
 });
-window.addEventListener('popstate', () => {
-  debugger
-  const hash = window.location.hash.substr(1)
-  console.log(hash)
-  // 根据hash值渲染不同的dom
-})
 // 与基座进行数据交互
 function handleMicroData () {
   // 是否是微前端环境

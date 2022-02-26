@@ -14,13 +14,7 @@ export default {
   data() {
     return {
     }
-  }, 
-  methods: {
-   back() {
-     window.history.go(-1)
-      // this.$router.go(-1)
-    }  
-  },
+  }
 }
 </script>
 

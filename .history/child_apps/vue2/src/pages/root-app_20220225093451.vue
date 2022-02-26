@@ -2,8 +2,7 @@
   <div>
     <img alt="Vue logo" src="../assets/logo.png">
     <h1>子应用 -- Vue@{{version}}</h1>
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <button @click="goPage2">跳page2页面</button>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
@@ -20,11 +19,6 @@ export default {
   },
   components: {
     HelloWorld
-  },
-  methods: {
-    goPage2() {
-      this.$router.push('/rootApp/page2')
-    }
   },
 }
 </script>
