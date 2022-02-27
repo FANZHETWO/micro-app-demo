@@ -6,8 +6,8 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/root-vue2',
-    name: 'root-app2',
+    path: window.__MICRO_APP_BASE_ROUTE__ || '/root-app',
+    name: 'rootApp',
     component: RootApp,
     children: [
       // 其他的路由都写到这里
@@ -17,7 +17,7 @@ const routes = [
         component: Home,
       },
       {
-        path: '/page2',
+        path: 'page2',
         name: 'page2',
         component: () => import(/* webpackChunkName: "page2" */ './pages/page2.vue'),
       },

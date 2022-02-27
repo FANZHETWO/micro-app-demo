@@ -12,12 +12,12 @@ const routes = [
     children: [
       // 其他的路由都写到这里
       {
-        path: 'home',
+        path: '/',
         name: 'home',
         component: Home,
       },
       {
-        path: '/page2',
+        path: 'page2',
         name: 'page2',
         component: () => import(/* webpackChunkName: "page2" */ './pages/page2.vue'),
       },

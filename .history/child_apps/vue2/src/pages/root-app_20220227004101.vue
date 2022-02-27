@@ -4,7 +4,7 @@
   <router-view />
 </div>
 </template>
-<script>
+<!-- <script>
 
 export default {
   name: 'root-app2',
@@ -13,8 +13,7 @@ export default {
     }
   },
   created() {
-    debugger
     this.$router.push('/root-app2/home')
   },
 }
-</script>
+</script> -->

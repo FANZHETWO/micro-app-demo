@@ -13,7 +13,6 @@ export default {
     }
   },
   created() {
-    debugger
     this.$router.push('/root-app2/home')
   },
 }

@@ -7,14 +7,13 @@
 <script>
 
 export default {
-  name: 'root-app2',
+  name: 'root-app',
   data() {
     return {
     }
   },
   created() {
-    debugger
-    this.$router.push('/root-app2/home')
+    // this.$router.push('/root-app2/home')
   },
 }
 </script>
