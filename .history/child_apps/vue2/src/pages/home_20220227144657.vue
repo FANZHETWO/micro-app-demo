@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     goPage2() {
-      this.$router.push('/app-vue2/page2')
+      this.$router.push('page2')
     }
   },
 }

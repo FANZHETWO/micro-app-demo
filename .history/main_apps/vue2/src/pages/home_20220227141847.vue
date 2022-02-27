@@ -1,8 +1,9 @@
 <template>
   <div>
     <img alt="Vue logo" src="../assets/logo.png">
-    <h1>子应用 -- Vue@{{version}}</h1>
-    <button @click="goPage2">goPAGE2</button>
+    <h1>主应用 - Vue@{{version}}</h1>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <button @click="goMicroAppPage">点击跳转微页面</button>
   </div>
 </template>
 
@@ -21,8 +22,8 @@ export default {
     HelloWorld
   },
   methods: {
-    goPage2() {
-      this.$router.push('/app-vue2/page2')
+    goMicroAppPage() {
+      this.$router.push('/app-vue2')
     }
   },
 }

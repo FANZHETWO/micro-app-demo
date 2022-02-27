@@ -1,5 +1,10 @@
 <template>
   <div id="vue2-app">
+  <button @click="back">back</button>
+    <div id='public-links'>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/page2">Page2</router-link>
+    </div>
     <router-view />
   </div>
 </template>
