@@ -43,7 +43,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "vite" */ './pages/vite.vue'),
   },
   {
-    path: '/app-vue2',
+    path: '/app-vue',
     name: 'app-vue2',
     component: () => import(/* webpackChunkName: "vue2" */ './pages/vue2.vue'),
   },

@@ -4,7 +4,7 @@
     <div class="child-vue2-test-btn">test</div>
     <img src="../assets/micro-app-logo.png" alt="micro-app-logo" />
      <button @click="goPage3">goPAGE3</button>
-    <button @click="back">back</button>
+    <button @click="back"></button>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
         this.$router.back()
     },
     goPage3() {
-      this.$router.push('/app-vue2/page3')
+      this.$router.push('/page3')
     }
   },
 }

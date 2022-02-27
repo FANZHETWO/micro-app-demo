@@ -21,7 +21,7 @@ export default {
         this.$router.back()
     },
     goPage3() {
-      this.$router.push('/app-vue2/page3')
+      this.$router.push('/page3')
     }
   },
 }
